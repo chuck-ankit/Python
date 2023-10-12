@@ -3,10 +3,12 @@ class Solution:
 
 	def valueEqualToIndex(self,arr, n):
 		# code here
+		res = []
 		for i in range(0,n):
-		    if(i==arr[i]):
-		        ans = i
-        return ans
+		        if i+1 == arr[i]:
+		            res.append(i+1)
+		        
+        return res
 
 #{ 
  # Driver Code Starts
